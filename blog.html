@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffebcc;
+            color: #333;
+            text-align: center;
+            padding: 1rem;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .container {
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            margin: 23px;
+            border-radius: 5px;
+            position: flex;
+            
+            
+
+        }
+        
+
+        .timeline div {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background-color: #e0f7fa;
+            border-radius: 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #ffebcc;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Abubakar's Family Chronicles</h1>
+    <p>Our adventures, memories, and stories.</p>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#blog-posts">Blog</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to the Abubakar's family Chronicles! <br>We're a fun-loving family of eight from Niger, Nigeria,<br> who loves adventure, food, and making memories.<br> Dad loves to watches football and reciting the Holy Qur'an,<br> Mom loves baking, our DIY queen, <br>she us on our toes with her endless energy and creativity.<br>I started this blog to share our journey and connect with amazing people like you!</p>
+    </section>
+
+    <section id="blog-posts">
+        <h2>Blog Posts</h2>
+        <article>
+            <h3>Blog Title 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+            <h3>Blog Title 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Photo Gallery</h2>
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+        <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+    </section>
+
+    <section id="milestones" class="timeline">
+        <h2>Milestones</h2>
+        <div>
+            <strong>December 14th, 2024: </strong>We had a family trip to the nother part of nigeria.  Unfortunately, i wasnt able to join in there travels, becuase of schooll practicals exams
+        </div>
+        <div>
+            <strong>June 14th, 2024: </strong>Zahra, my youngest sister started school, 
+        </div>
+        <div>
+            <strong>December 30th, 2023: </strong>My younger sister completed her Qur'an memorization(Hifz), leaving me her elder brother behind. Felt very happy for her, it was a joyous day.
+        </div>
+        
+        <div>
+            <strong>December 30th, 2023: </strong>My younger sister completed her Qur'an memorization(Hifz), leaving me her elder brother behind. Felt very happy for her, it was a joyous day.
+        </div>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 The Family Chronicles</p>
+</footer>
+
+<script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for reaching out!');
+    });
+</script>
+
+</body>
+</html>
